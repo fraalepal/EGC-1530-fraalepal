@@ -10,8 +10,8 @@ addons:
 global:
   - PGPORT=5432
 before_script:
- - psql -c "create user decide with password 'decide'"
- - psql -c "create database decide owner decide"
+ - psql -c "create user decide with password 'complexpassword'"
+ - psql -c "create database decidedb owner decide"
  - psql -U postgres -c "ALTER USER decide CREATEDB"
 install:
 - pip install -r requirements.txt
