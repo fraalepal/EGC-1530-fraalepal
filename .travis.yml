@@ -17,7 +17,8 @@ install:
 - pip install -r requirements.txt
 script:
 - cd decide
-- python manage.py test store --keepdb
+- python manage.py test --keepdb
 branches:
    only:
      - master
+
